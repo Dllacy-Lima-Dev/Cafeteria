@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BSI 2020 - SISTEMAS DISTRIBUIDOS">
+  <meta name="keywords" content="BSI 2020, SISTEMAS DISTRIBUIDOS, NAP-01">
+  <meta name="author" content="Dllacy Lima, Higor Ribeiro, Samuel, Lucas Ana Paula">
+  <title>Cafeteria BSI - 2020</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- ▼ ▼ ▼ MENU LATERAL ▼ ▼ ▼ -->
+  <div class="menu-lateral">
+    <a onclick="openModal()">Menu</a>
+    <a onclick="openJanela()">Sobre Nós</a>
+    <!-- ▼ ▼ ▼ LISTA DOS MENBROS DA EQUIEP - FOTOS ▼ ▼ ▼ -->
+    <ul class="new">
+      <li class="img-00"><img src="../view/img/menbros/eu.jpg" alt="dllacy"></li>
+      <li class="img-00"><img src="../view/img/menbros/higor.jpg" alt="higor"></li>
+      <li class="img-00"><img src="../view/img/menbros/lukita.jpg" alt="lucas"></li>
+      <li class="img-00"><img src="../view/img/menbros/samuca.jpg" alt="samuca"></li>
+      <li class="img-00"><img src="../view/img/menbros/ana.jpg" alt="ana"></li>
+    </ul>
+  </div>
+  <!---------------------------------------------------------------------->
+
+  <!-- ▼ ▼ ▼ TITULO DO SITE ▼ ▼ ▼ -->
+  <div class="container-01">
+    <h1 id="titulo01">Cafeteria BSI 2020</h1>
+  </div>
+  <!---------------------------------------------------------------------->
+
+  <!-- ▼ ▼ ▼ CORPO DO SITE TELA CENTRAL ▼ ▼ ▼ -->
+  <div class="corpo">
+    <div class="box-01">
+      <div class="container">
+        <!-- ▼ ▼ ▼ CCARDS COM AS FOTOS DE CAFÉ ▼ ▼ ▼ -->
+        <div class="box-002">
+          <img src="../view/img/café40.jpeg" alt="café">
+        </div>
+        <div class="box-002">
+          <img src="../view/img/cafe80.jpeg" alt="café">
+        </div>
+      </div>
+      <div class="container-02">
+        <div class="box-002">
+          <img src="../view/img/cafe200.jpg" alt="café">
+        </div>
+        <div class="box-002">
+          <img src="../view/img/cafe1000.jpg" alt="café">
+        </div>
+      </div>
+    </div>
+    <div class="box-02">
+      <!-- ▼ ▼ ▼ FORMULARIO DO SITE ▼ ▼ ▼ -->
+      <form action="">
+        <div class="logo-100">
+          <img src="../view/img/Brasão_ufra.png" alt="logo form">
+        </div>
+        <!-- ▼ ▼ ▼ NOME ▼ ▼ ▼ -->
+        <label for="">Informe seu nome</label>
+        <input type="text" placeholder="informe seu nome">
+        <!-- ▼ ▼ ▼ LISTA DE OPÇÕES SELECT ▼ ▼ ▼ -->
+        <label for="">Café disponíveis</label>
+        <select name="cafe">
+          <option value="" selected></option>
+          <option value="expresso">Café Expresso</option>
+          <option value="latte">Café Latte</option>
+          <option value="americano">Café Americano</option>
+          <option value="cappuccino">Café Cappuccino</option>
+          <option value="con_coppi">Café Con Coppi</option>
+          <option value="da_montanha">Café Da Montanha</option>
+        </select>
+        <!-- ▼ ▼ ▼ DESCRIÇÃO ▼ ▼ ▼ -->
+        <label for="">Descrição</label>
+        <textarea style="resize: none; padding: 5px;" style="resize: none;" name="descricao"></textarea>
+        <button>Enviar</button>
+      </form>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------->
+
+  <!-- ▼ ▼ ▼ JANELA MODAL - PREÇOS DO CAFÉ ▼ ▼ ▼ -->
+  <div class="modal-container">
+    <div id="modal" class="modal">
+      <div>
+        <h5>CAFETERIA BSI - CARDAPIO</h5>
+        <ul>
+          <h3>Cardapio</h3>
+          <li>Expresso............................. <span>R$ 10,50</span></li>
+          <li>Latte................................... <span>R$ 10,50</span></li>
+          <li>Americano......................... <span>R$ 10,50</span></li>
+          <li>Cappuccino....................... <span>R$ 10,50</span></li>
+          <li>Con Coppi......................... <span>R$ 10,50</span></li>
+          <li>Da Montanha.................... <span>R$ 10,50</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------->
+
+  <!-- ▼ ▼ ▼ JANELA MODAL 2 - VIDEO ▼ ▼ ▼ -->
+  <div class="modal-container-01">
+    <div id="modal" class="modal">
+      <video width="640" height="360" controls>
+        <source src="../view/video/cafeeee.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------->
+
+  <!-- ▼ ▼ ▼ RODAPÉ ▼ ▼ ▼ -->
+  <footer class="fixar-rodape">
+    <p>&copy; Universidade Federal Rural da Amazonia - Curso Bacharelado de Sistemas de Informação - SISTEMAS
+      DISTRIBUIDOS</p>
+  </footer>
+  <!---------------------------------------------------------------------->
+
+  <!-- ▼ ▼ ▼ JAVASCRIPT ▼ ▼ ▼ -->
+  <script src="../view/js/form.js"></script>
+  <script src="../view/js/main.js"></script>
+</body>
+
+</html>
